@@ -12,10 +12,10 @@ int main()
 	switch (z)
 	{
 	case 0:
-			y = -1;
-			break;
+		y = -1;
+		break;
 	case 1:
-		y = 2*x;
+		y = 2 * x;
 		break;
 	}
 	printf("y=%d", y);
