@@ -1,3 +1,0 @@
-﻿  题目1.c
-D:\visual studio work\Project8\Project8\题目1.c(1,1): warning C4828: 文件包含在偏移 0x255 处开始的字符，该字符在当前源字符集中无效(代码页 936)。
-  Project8.vcxproj -> D:\visual studio work\Project8\x64\Debug\Project8.exe
