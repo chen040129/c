@@ -1,0 +1,4 @@
+﻿  project9.c
+D:\visual studio work\cc\Project9\Project9\project9.c(8,9): warning C4101: “c”: 未引用的局部变量
+D:\visual studio work\cc\Project9\Project9\project9.c(8,12): warning C4101: “d”: 未引用的局部变量
+  Project9.vcxproj -> D:\visual studio work\cc\Project9\x64\Debug\Project9.exe
