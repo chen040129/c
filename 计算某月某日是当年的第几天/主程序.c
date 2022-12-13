@@ -9,15 +9,15 @@ void menu() {
 }
 int main() {
 	menu();
-	int year, mouth, day;
+	int year, month, day;
 	int date;
 	printf("请输入年月日（格式：2004 5 4）\n");
-	scanf("%d %d %d", &year,&mouth,&day);
-	if (mouth > 12) {
+	scanf("%d %d %d", &year,&month,&day);
+	if (month > 12) {
 		printf("您输入的月份有误。\n");
 		return 0;
 	}
-	switch (mouth)
+	switch (month)
 	{
 	case 1:date=0;
 		break;
@@ -46,15 +46,15 @@ int main() {
 	default:printf("您输入的月份有误。\n"); break;
 	}
 	date = date + day;
-    if ((mouth == 2 || mouth == 4 || mouth == 6 || mouth == 9 || mouth == 11) && day > 30) {
+    if ((month == 2 || month == 4 || month == 6 || month == 9 || month == 11) && day > 30) {
     printf("您输入的日期或月份有误。\n");
     return 0;
     }
-	if ((mouth == 1 || mouth == 3 || mouth == 5 || mouth == 7 || mouth == 8|| mouth == 10|| mouth == 12) && day > 31) {
+	if ((month == 1 || month == 3 || month == 5 || month == 7 || month == 8|| month == 10|| month == 12) && day > 31) {
 		printf("您输入的日期或月份有误。\n");
 		return 0;
 	}
-	if ((year % 400 == 0||(year%4==0&&year%100!=0) )&& mouth > 2) {
+	if ((year % 400 == 0||(year%4==0&&year%100!=0) )&& month > 2) {
 		date++;
 	}
 
