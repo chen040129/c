@@ -1,25 +1,24 @@
 #include<stdio.h>
-#define SIZE 10
-int main(void){
-    int str[SIZE]={5,6,7,9,3,2,1,8,0,4};
-    int temp=0;
-    // for (size_t i = 0; i < SIZE; i++)
-    // {
-    //     printf("初始值：%d\n",str[i]);
-    // }
-    for (size_t j = 0; j < SIZE-1; j++)//执行层数
+void Bubblesort(int arr[],int len) {
+    for (size_t i = 0; i < len-1; i++)
     {
-       for(int i=0;i<SIZE-1-j;i++){//每一层的执行次数
-        if(str[i]>str[i+1]){
-            temp=str[i];
-            str[i]=str[i+1];
-            str[i+1]=temp;
+        for (size_t j=0; j < len - 1 - i; j++) {
+            if (arr[j] > arr[j + 1]) {
+                int temp = arr[j + 1];
+                arr[j + 1] = arr[j];
+                arr[j] = temp;
+            }
         }
     }
-    }
-    for (size_t m = 0; m < 10; m++)
+}
+
+int main() {
+    int arr[] = { 8,6,7,5,2,3,1,10,9,4 };
+    int len = sizeof(arr) / sizeof(arr[0]);
+    Bubblesort(arr, len);
+    for (size_t i = 0; i < len; i++)
     {
-    printf("str[%d]=%d\n",m,str[m]);
+        printf("%d\n", arr[i]);
     }
     return 0;
 }
